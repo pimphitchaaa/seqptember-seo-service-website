@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Area — SEO Agency for Technical SEO, Content &amp; Link Building</title>
+<meta name="description" content="Area is an SEO agency that grows organic revenue through technical SEO, content systems and authority building. Free visibility audit within 3 business days.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":["ProfessionalService","Organization"],"name":"Area","description":"SEO agency specialising in technical SEO, content strategy and authority building.","url":"https://area.studio/","email":"hello@area.studio","priceRange":"$$","address":{"@type":"PostalAddress","addressLocality":"Portland","addressRegion":"OR","addressCountry":"US"},"areaServed":"Worldwide","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"68"}}
+</script>
+<style>
+:root{--cream:#F7F6F1;--paper:#FFFEFB;--ink:#1C1E18;--muted:#6C7065;--line:#DEDCD2;--olive:#7D8C5C;--sage:#A9BB8B;--lime:#B9CE6A;--sand:#E4DDCD;--max:1120px;--r:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--cream);color:var(--ink);font:400 16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+section{padding:88px 0}
+h1,h2,h3{font-family:"Instrument Serif",Georgia,serif;font-weight:400;letter-spacing:-.02em;line-height:1.05}
+h1{font-size:clamp(38px,6.8vw,72px)}
+h2{font-size:clamp(30px,4.4vw,50px)}
+h3{font-size:22px;line-height:1.25}
+p{color:var(--muted)}
+a{color:inherit;text-decoration:none}
+svg{display:block;max-width:100%}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:var(--cream);padding:10px 18px;border-radius:0 0 10px 0;z-index:99}
+.skip:focus{left:0}
+.label{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:500}
+/* centering fix */
+.center{text-align:center}
+.center p,p.center,.lede.center{margin-left:auto;margin-right:auto}
+.lede{font-size:17px;max-width:560px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:12px 24px;border-radius:999px;background:var(--lime);color:var(--ink);font-size:14px;font-weight:500;border:1px solid transparent;cursor:pointer;font-family:inherit;transition:.25s}
+.btn:hover{background:var(--olive);color:#fff}
+.btn.ghost{background:transparent;border-color:var(--line)}
+.btn.ghost:hover{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+.site-head{position:sticky;top:0;z-index:60;background:rgba(247,246,241,.88);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
+.site-head.stuck{border-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px;gap:24px}
+.brand{font-family:"Instrument Serif",serif;font-size:23px;display:flex;align-items:center;gap:8px}
+.brand i{width:9px;height:9px;border-radius:50%;background:var(--olive)}
+.nav-links{display:flex;align-items:center;gap:30px;font-size:14px;color:var(--muted)}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a.on{color:var(--ink);font-weight:500}
+#burger{display:none;background:none;border:none;cursor:pointer;font-size:22px}
+.page{display:none}
+.page.on{display:block}
+.page-head{padding:56px 0 0;text-align:center}
+.crumbs{font-size:12.5px;color:var(--muted);margin-bottom:20px}
+.crumbs span{margin:0 8px;opacity:.5}
+.page-head h1{font-size:clamp(36px,5.8vw,62px);margin-bottom:18px}
+.page-head .lede{margin-bottom:26px}
+.hero{padding:66px 0 0;text-align:center}
+.hero .label{margin-bottom:20px}
+.hero h1{margin-bottom:20px}
+.hero .lede{margin-bottom:28px}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.hero-note{margin-top:18px;font-size:13px}
+.stage{margin-top:56px;background:var(--sage);border-radius:var(--r);padding:44px 44px 0;position:relative;overflow:hidden}
+.screen{position:relative;max-width:760px;margin:0 auto;border-radius:12px 12px 0 0;overflow:hidden;box-shadow:0 26px 60px rgba(28,30,24,.22);background:#fff}
+.screen .bar{height:30px;background:#EFEEE9;display:flex;align-items:center;gap:6px;padding:0 12px;border-bottom:1px solid var(--line)}
+.screen .bar b{width:8px;height:8px;border-radius:50%;background:#CFCDC4}
+.chip{position:absolute;top:52px;left:26px;background:rgba(255,255,255,.92);border-radius:10px;padding:8px 14px;font-size:12px;font-weight:600}
+.chip small{display:block;font-weight:400;color:var(--muted);font-size:10px;letter-spacing:.06em;text-transform:uppercase}
+.pill{position:absolute;top:52px;right:26px;background:var(--olive);color:#fff;border-radius:999px;padding:7px 16px;font-size:12px}
+.trust{padding:50px 0 0}
+.marks{display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap;margin-top:22px;opacity:.55}
+.marks span{font-size:17px;font-weight:600;letter-spacing:-.02em}
+.sec-head{max-width:640px;margin-bottom:52px}
+.sec-head.center{margin-left:auto;margin-right:auto}
+.sec-head .label{margin-bottom:14px;display:block}
+.sec-head p{margin-top:14px}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.svc{background:var(--paper);padding:32px 28px}
+.svc:hover{background:#FBFAF4}
+.svc .ic{width:26px;height:26px;color:var(--olive);margin-bottom:14px}
+.svc h3{font-size:17px;font-family:Inter,sans-serif;font-weight:600;letter-spacing:0;margin-bottom:8px}
+.svc p{font-size:14.5px;line-height:1.55}
+.deep{display:grid;grid-template-columns:.9fr 1.1fr;gap:52px;padding:48px 0;border-top:1px solid var(--line)}
+.deep:first-of-type{border-top:none;padding-top:0}
+.deep .n{font-family:"Instrument Serif",serif;font-size:40px;color:var(--olive);line-height:1;margin-bottom:12px}
+.deep h3{margin-bottom:12px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.cols h4{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:10px}
+.cols ul{list-style:none;font-size:14.5px;color:var(--muted)}
+.cols li{padding:6px 0 6px 18px;position:relative}
+.cols li:before{content:"";position:absolute;left:0;top:14px;width:5px;height:5px;border-radius:50%;background:var(--sage)}
+.results{display:grid;grid-template-columns:repeat(4,1fr);gap:34px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:42px 0}
+.stat .n{font-family:"Instrument Serif",serif;font-size:48px;line-height:1;margin-bottom:8px}
+.stat p{font-size:13.5px}
+.cases{display:grid;gap:22px;margin-top:48px}
+.case{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:32px;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.case .tag{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.case h3{margin-bottom:10px}
+.case p{font-size:14.5px}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;background:var(--cream);border-radius:12px;padding:24px 20px}
+.metrics b{font-family:"Instrument Serif",serif;font-weight:400;font-size:29px;display:block;line-height:1.1;margin-bottom:4px}
+.metrics span{font-size:12px;color:var(--muted);display:block;line-height:1.35}
+.scene{border-radius:var(--r);overflow:hidden;line-height:0}
+.scene svg{width:100%;height:auto}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.split h2{margin-bottom:16px}
+.checks{list-style:none;margin:24px 0 30px}
+.checks li{display:flex;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);font-size:14.5px;color:var(--muted)}
+.checks li:last-child{border-bottom:none}
+.checks svg{flex:none;margin-top:3px;color:var(--olive)}
+.art{background:var(--sand);border-radius:var(--r);padding:42px;display:grid;place-items:center}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+.plan{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:32px 28px;display:flex;flex-direction:column}
+.plan.feature{background:var(--ink);border-color:var(--ink);color:var(--cream)}
+.plan.feature p,.plan.feature li{color:#B9BDB1}
+.plan .tag{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+.plan.feature .tag{color:var(--lime)}
+.plan .price{font-family:"Instrument Serif",serif;font-size:44px;line-height:1;margin-bottom:6px}
+.plan .price span{font-family:Inter,sans-serif;font-size:13px;color:var(--muted)}
+.plan.feature .price span{color:#B9BDB1}
+.plan>p{font-size:14px;margin:12px 0 20px}
+.plan ul{list-style:none;font-size:14px;color:var(--muted);margin-bottom:24px;flex:1}
+.plan li{display:flex;gap:10px;padding:7px 0}
+.plan li svg{flex:none;margin-top:4px;color:var(--olive)}
+.plan.feature li svg{color:var(--lime)}
+.plan .btn{justify-content:center}
+.plan.feature .btn{background:var(--lime);color:var(--ink)}
+.plan.feature .btn:hover{background:var(--sage)}
+.tbl-wrap{margin-top:48px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+th,td{padding:16px 24px;text-align:left;border-bottom:1px solid var(--line)}
+thead th{font-weight:500;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);background:#F2F1EA}
+thead th:first-child{color:var(--ink)}
+tbody tr:last-child td{border-bottom:none}
+td:first-child{font-weight:500}
+td:not(:first-child){color:var(--muted)}
+.quote-row{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:center}
+.quote blockquote{font-family:"Instrument Serif",serif;font-size:clamp(21px,2.5vw,30px);line-height:1.35}
+.quote figcaption{margin-top:24px;font-size:13.5px}
+.quote figcaption b{display:block;font-weight:600}
+.quote figcaption span{color:var(--muted)}
+.phase{display:grid;grid-template-columns:180px 1fr;gap:42px;padding:42px 0;border-top:1px solid var(--line)}
+.phase:first-of-type{border-top:none;padding-top:0}
+.phase .when{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.phase .when b{font-family:"Instrument Serif",serif;font-size:42px;text-transform:none;color:var(--olive);display:block;font-weight:400;line-height:1;margin-bottom:8px;letter-spacing:-.02em}
+.phase h3{margin-bottom:12px}
+.phase p{max-width:640px}
+.out{margin-top:18px;display:flex;gap:9px;flex-wrap:wrap}
+.out span{font-size:12.5px;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:6px 14px;color:var(--muted)}
+.faq{max-width:800px;margin:0 auto}
+.faq-group{margin-bottom:42px}
+.faq-group>h2{font-size:26px;margin-bottom:12px}
+.qa{border-bottom:1px solid var(--line)}
+.qa summary{list-style:none;cursor:pointer;padding:21px 0;display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:17px;font-weight:500}
+.qa summary::-webkit-details-marker{display:none}
+.pm{flex:none;width:26px;height:26px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;font-size:15px;color:var(--muted);transition:.25s}
+.qa[open] .pm{background:var(--lime);border-color:var(--lime);color:var(--ink)}
+.ans{padding:0 0 24px;font-size:15px;color:var(--muted);max-width:660px}
+.cta-band{background:var(--ink);border-radius:var(--r);padding:60px 44px;text-align:center;color:var(--cream)}
+.cta-band h2{margin-bottom:14px}
+.cta-band p{color:#B9BDB1;max-width:520px;margin:0 auto 24px}
+.cta-band .btn.ghost{border-color:#3B3F35;color:var(--cream)}
+.cta-band .btn.ghost:hover{background:var(--cream);color:var(--ink)}
+.contact{text-align:center;padding-bottom:100px}
+.form{max-width:520px;margin:36px auto 0;display:grid;gap:12px;text-align:left}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+input,textarea,select{width:100%;padding:14px 18px;border:1px solid var(--line);border-radius:12px;background:var(--paper);font:inherit;font-size:15px;color:var(--ink)}
+input::placeholder,textarea::placeholder{color:#A3A69B}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--olive)}
+textarea{min-height:110px;resize:vertical}
+.form .btn{justify-content:center}
+#sent{display:none;background:var(--sage);border-radius:12px;padding:15px 20px;font-size:14.5px;text-align:center}
+.site-foot{border-top:1px solid var(--line);padding:44px 0 38px}
+.foot-grid{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;margin-bottom:34px}
+.foot-links{display:flex;gap:38px;font-size:14px;color:var(--muted);flex-wrap:wrap}
+.foot-links a:hover{color:var(--ink)}
+.foot-bot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:22px}
+@media(max-width:940px){
+section{padding:62px 0}
+.services{grid-template-columns:1fr 1fr}
+.results{grid-template-columns:1fr 1fr;gap:26px}
+.split,.quote-row,.deep,.case,.phase{grid-template-columns:1fr;gap:30px}
+.plans{grid-template-columns:1fr;gap:20px}
+.stage{padding:26px 20px 0}
+.cta-band{padding:46px 24px}
+.nav-links{position:absolute;top:70px;left:20px;right:20px;flex-direction:column;align-items:stretch;gap:0;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:8px;display:none}
+.nav-links.open{display:flex}
+.nav-links a{padding:12px 14px}
+#burger{display:block}
+.chip,.pill{display:none}
+}
+@media(max-width:560px){
+.services,.cols,.metrics{grid-template-columns:1fr}
+.two{grid-template-columns:1fr}
+.tbl-wrap{overflow-x:auto}
+table{min-width:520px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head" id="head">
+<div class="wrap">
+<nav class="nav" aria-label="Primary">
+<a href="#/" class="brand"><i></i>Area</a>
+<button id="burger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+<div class="nav-links" id="menu">
+<a href="#/services" data-nav="services">SEO Services</a>
+<a href="#/results" data-nav="results">Results</a>
+<a href="#/pricing" data-nav="pricing">Pricing</a>
+<a href="#/process" data-nav="process">Process</a>
+<a href="#/faq" data-nav="faq">FAQ</a>
+<a href="#/contact" class="btn" data-nav="contact">Free SEO audit</a>
+</div>
+</nav>
+</div>
+</header>
+
+<main id="main">
+
+<!-- ══ HOME ══ -->
+<div class="page" id="p-home">
+<section class="hero">
+<div class="wrap">
+<p class="label">SEO Agency · Est. 2016</p>
+<h1>Rank everywhere<br>that matters.</h1>
+<p class="lede center">Area is an SEO agency that turns organic search into a predictable revenue channel — technical fixes, content that answers real intent, and links you'd be proud to show a journalist.</p>
+<div class="hero-cta">
+<a href="#/contact" class="btn">Get a free SEO audit →</a>
+<a href="#/services" class="btn ghost">See our services</a>
+</div>
+<p class="hero-note center">No contracts for the first 90 days · Report delivered in 3 business days</p>
+<div class="stage">
+<div class="screen">
+<div class="bar"><b></b><b></b><b></b></div>
+<svg viewBox="0 0 760 330" role="img" aria-label="Chart showing organic sessions climbing over twelve months">
+<defs>
+<linearGradient id="g-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DDE6EA"/><stop offset="1" stop-color="#F0EFE7"/></linearGradient>
+<linearGradient id="g-h1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8FA36A"/><stop offset="1" stop-color="#6E8150"/></linearGradient>
+<linearGradient id="g-h2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A9BB8B"/><stop offset="1" stop-color="#879A66"/></linearGradient>
+</defs>
+<rect width="760" height="330" fill="url(#g-sky)"/>
+<path d="M0 190C120 140 200 205 320 175 440 145 540 200 660 165L760 180V330H0Z" fill="url(#g-h2)"/>
+<path d="M0 235C140 195 240 250 380 220 520 190 620 245 760 215V330H0Z" fill="url(#g-h1)"/>
+<g stroke="#F7F6F1" stroke-width="1" opacity=".5"><path d="M90 205V255M150 188V248M212 196V252M272 180V244M334 172V240M396 184V246M458 166V236M520 176V242M582 158V232M644 168V238M700 152V228"/></g>
+<path d="M90 205 150 188 212 196 272 180 334 172 396 184 458 166 520 176 582 158 644 168 700 152" fill="none" stroke="#F7F6F1" stroke-width="2.5" stroke-linejoin="round"/>
+<g fill="#F7F6F1"><circle cx="90" cy="205" r="3"/><circle cx="212" cy="196" r="3"/><circle cx="334" cy="172" r="3"/><circle cx="458" cy="166" r="3"/><circle cx="582" cy="158" r="3"/><circle cx="700" cy="152" r="3"/></g>
+</svg>
+<div class="chip">+218%<small>Organic sessions · 12 mo</small></div>
+<div class="pill">Visibility Report</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="trust" aria-label="Clients">
+<div class="wrap">
+<p class="label">SEO partner to</p>
+<div class="marks"><span>Northwind</span><span>Sagepoint</span><span>Merida</span><span>Cobalt&nbsp;Row</span><span>Fieldnote</span><span>Verano</span></div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+<div class="sec-head">
+<span class="label">What we do</span>
+<h2>Full-stack SEO services.</h2>
+<p>Search rewards three things: a site engines can crawl, content people genuinely need, and enough authority to be trusted. We run all three as one programme.</p>
+</div>
+<div class="services">
+<article class="svc"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg><h3>Technical SEO</h3><p>Crawl budget, indexation, Core Web Vitals and schema — fixed in the codebase, not a slide deck.</p></article>
+<article class="svc"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5 21 21"/></svg><h3>Keyword &amp; Intent Research</h3><p>Every term mapped to a funnel stage, so you rank for queries that convert.</p></article>
+<article class="svc"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 4h11l3 3v13H5z"/><path d="M9 10h6M9 14h6"/></svg><h3>Content &amp; On-Page</h3><p>Pillar pages and topic clusters written by specialists, optimised to win the snippet.</p></article>
+<article class="svc"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M10 14a4 4 0 0 0 6 .5l2.5-2.5a4.2 4.2 0 0 0-6-6L11 7.5"/><path d="M14 10a4 4 0 0 0-6-.5L5.5 12a4.2 4.2 0 0 0 6 6L13 16.5"/></svg><h3>Link Building &amp; Digital PR</h3><p>Editorial links from publications your customers read. No PBNs, no marketplaces.</p></article>
+<article class="svc"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg><h3>Local &amp; E-commerce SEO</h3><p>For multi-location brands and catalogues where the technical rules change entirely.</p></article>
+<article class="svc"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/></svg><h3>Reporting &amp; Analytics</h3><p>One live dashboard tying rankings to pipeline, so finance stops asking what SEO did.</p></article>
+</div>
+<p style="margin-top:30px"><a href="#/services" class="btn ghost">Explore all services →</a></p>
+</div>
+</section>
+
+<section style="padding-top:0">
+<div class="wrap">
+<div class="results">
+<div class="stat"><div class="n">+218%</div><p>Median organic traffic growth in the first 12 months</p></div>
+<div class="stat"><div class="n">4.2×</div><p>Average return on SEO investment across active clients</p></div>
+<div class="stat"><div class="n">1,900+</div><p>Keywords moved onto page one since 2016</p></div>
+<div class="stat"><div class="n">94%</div><p>Client retention past the first six months</p></div>
+</div>
+<p style="margin-top:30px"><a href="#/results" class="btn ghost">Read the case studies →</a></p>
+</div>
+</section>
+
+<section style="padding-top:0">
+<div class="wrap"><div class="scene">
+<svg viewBox="0 0 1120 400" role="img" aria-label="Layered mountain range at dawn">
+<defs>
+<linearGradient id="g-s2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E7E3D6"/><stop offset="1" stop-color="#D6D8CB"/></linearGradient>
+<linearGradient id="g-m1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B7A98D"/><stop offset="1" stop-color="#8E8468"/></linearGradient>
+<linearGradient id="g-m2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8B9464"/><stop offset="1" stop-color="#65703F"/></linearGradient>
+<linearGradient id="g-m3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5E6B44"/><stop offset="1" stop-color="#3D4A2C"/></linearGradient>
+</defs>
+<rect width="1120" height="400" fill="url(#g-s2)"/>
+<path d="M0 210 140 120 240 185 370 95 500 200 610 140 720 215 860 110 990 195 1120 135V400H0Z" fill="url(#g-m1)"/>
+<path d="M140 120 186 155 200 145 240 185ZM370 95 420 140 445 128 500 200ZM860 110 905 152 925 140 990 195Z" fill="#F1EEE4" opacity=".8"/>
+<path d="M0 275 170 205 300 265 450 195 600 270 760 210 900 275 1050 220 1120 250V400H0Z" fill="url(#g-m2)"/>
+<path d="M0 335 200 285 400 340 620 290 820 345 1010 300 1120 330V400H0Z" fill="url(#g-m3)"/>
+</svg>
+</div></div>
+</section>
+
+<section style="padding-top:26px">
+<div class="wrap"><div class="quote-row">
+<div class="art" style="padding:32px">
+<svg viewBox="0 0 280 300" role="img" aria-label="Balanced stone forms">
+<defs><radialGradient id="g-st" cx=".35" cy=".3"><stop offset="0" stop-color="#FBF9F3"/><stop offset="1" stop-color="#CFC7B4"/></radialGradient></defs>
+<ellipse cx="140" cy="278" rx="96" ry="14" fill="#000" opacity=".07"/>
+<circle cx="140" cy="96" r="66" fill="url(#g-st)"/>
+<path d="M74 200a66 60 0 0 1 132 0 66 60 0 0 1-132 0z" fill="url(#g-st)"/>
+<ellipse cx="140" cy="262" rx="78" ry="18" fill="url(#g-st)"/>
+</svg>
+</div>
+<figure class="quote">
+<blockquote>"We'd been through two SEO agencies before Area. They found indexation problems both had missed, rebuilt our site architecture, and had us on page one for our three highest-value keywords inside a quarter."</blockquote>
+<figcaption><b>Jane Miller</b><span>VP Growth, Northwind</span></figcaption>
+</figure>
+</div></div>
+</section>
+
+<section style="padding-top:0">
+<div class="wrap"><div class="cta-band">
+<h2>Let's find your missing traffic</h2>
+<p>A 140-point audit and 12-month forecast, delivered in three business days. Yours to keep whether you hire us or not.</p>
+<a href="#/contact" class="btn">Get a free SEO audit →</a>
+</div></div>
+</section>
+</div>
+
+<!-- ══ SERVICES ══ -->
+<div class="page" id="p-services">
+<section class="page-head">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="#/">Home</a><span>/</span>SEO Services</nav>
+<h1>SEO services, end to end.</h1>
+<p class="lede center">Six disciplines, one programme. We don't sell them as separate retainers because search doesn't reward them separately.</p>
+<a href="#/contact" class="btn">Get a free SEO audit →</a>
+</div>
+</section>
+<section style="padding-top:64px">
+<div class="wrap">
+
+<article class="deep">
+<div><div class="n">01</div><h3>Technical SEO</h3><p>The unglamorous work that sets your ceiling. We find what's stopping engines from crawling, rendering and trusting your site — then fix it in the codebase rather than handing over a spreadsheet.</p></div>
+<div class="cols">
+<div><h4>What we do</h4><ul><li>Crawl and indexation audits</li><li>Server log-file analysis</li><li>Core Web Vitals and page speed</li><li>JavaScript rendering review</li><li>Site architecture and internal linking</li></ul></div>
+<div><h4>What you get</h4><ul><li>Prioritised, ticket-ready fix list</li><li>Schema markup implemented</li><li>XML sitemap and robots strategy</li><li>Migration and redirect QA</li><li>Monthly technical health score</li></ul></div>
+</div>
+</article>
+
+<article class="deep">
+<div><div class="n">02</div><h3>Keyword &amp; Intent Research</h3><p>Volume is a vanity metric on its own. We classify every query by what the searcher actually wants, then map it to the funnel stage it belongs to — so effort goes where revenue is.</p></div>
+<div class="cols">
+<div><h4>What we do</h4><ul><li>Full keyword universe build</li><li>Semantic clustering by topic</li><li>SERP intent classification</li><li>Competitor gap analysis</li><li>Share-of-voice modelling</li></ul></div>
+<div><h4>What you get</h4><ul><li>Keyword map tied to URLs</li><li>Priority scoring by difficulty and value</li><li>12-month traffic forecast</li><li>Revenue projection with assumptions</li><li>Quarterly refresh</li></ul></div>
+</div>
+</article>
+
+<article class="deep">
+<div><div class="n">03</div><h3>Content &amp; On-Page SEO</h3><p>Written by subject specialists, reviewed by people who know your category, and structured so both search engines and AI assistants can lift the answer cleanly.</p></div>
+<div class="cols">
+<div><h4>What we do</h4><ul><li>Editorial calendar and briefs</li><li>Pillar pages and topic clusters</li><li>Long-form expert content</li><li>Title, meta and heading optimisation</li><li>Content refresh and pruning</li></ul></div>
+<div><h4>What you get</h4><ul><li>2–10 pieces per month by plan</li><li>Internal linking implemented</li><li>Featured snippet formatting</li><li>Author bios and E-E-A-T signals</li><li>Performance review per piece</li></ul></div>
+</div>
+</article>
+
+<article class="deep">
+<div><div class="n">04</div><h3>Link Building &amp; Digital PR</h3><p>We earn links the slow, defensible way. Every placement is one you could show a journalist without wincing — because in most cases a journalist put it there.</p></div>
+<div class="cols">
+<div><h4>What we do</h4><ul><li>Original data studies and surveys</li><li>Journalist outreach and commentary</li><li>Broken link and mention reclaim</li><li>Backlink toxicity audit and disavow</li><li>Competitor link gap analysis</li></ul></div>
+<div><h4>What we never do</h4><ul><li>Private blog networks</li><li>Paid link marketplaces</li><li>Directory and forum spam</li><li>Automated guest post blasts</li><li>Anything we'd hide from Google</li></ul></div>
+</div>
+</article>
+
+<article class="deep">
+<div><div class="n">05</div><h3>Local &amp; E-commerce SEO</h3><p>Multi-location brands and large catalogues break the standard playbook. Faceted navigation, duplicate templates and proximity ranking all need their own approach.</p></div>
+<div class="cols">
+<div><h4>Local</h4><ul><li>Google Business Profile optimisation</li><li>Location landing page systems</li><li>Citation consistency and cleanup</li><li>Review generation strategy</li></ul></div>
+<div><h4>E-commerce</h4><ul><li>Faceted navigation and canonicals</li><li>Category page optimisation</li><li>Product and review schema</li><li>Out-of-stock and pagination handling</li></ul></div>
+</div>
+</article>
+
+<article class="deep">
+<div><div class="n">06</div><h3>Reporting &amp; Analytics</h3><p>One live dashboard, one honest monthly summary, and a fortnightly call with the strategist doing the work — not an account manager relaying it second-hand.</p></div>
+<div class="cols">
+<div><h4>What we track</h4><ul><li>GA4 and Search Console integration</li><li>Rank tracking incl. AI Overviews</li><li>Share of voice vs competitors</li><li>Technical health over time</li></ul></div>
+<div><h4>How we report</h4><ul><li>Attribution to leads and revenue</li><li>Written monthly narrative</li><li>Fortnightly strategist call</li><li>Full data access, always exportable</li></ul></div>
+</div>
+</article>
+
+</div>
+</section>
+<section style="padding-top:0">
+<div class="wrap"><div class="cta-band">
+<h2>Not sure which you need?</h2>
+<p>The free audit tells you. We'll show which of these six would move the needle fastest on your site, in priority order.</p>
+<a href="#/contact" class="btn">Get a free SEO audit →</a> <a href="#/pricing" class="btn ghost">See pricing</a>
+</div></div>
+</section>
+</div>
+
+<!-- ══ RESULTS ══ -->
+<div class="page" id="p-results">
+<section class="page-head">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="#/">Home</a><span>/</span>Results</nav>
+<h1>The numbers, with the working shown.</h1>
+<p class="lede center">Every figure below is measured in GA4 and Search Console, not estimated by a third-party tool. Where we've excluded branded traffic, we say so.</p>
+<a href="#/contact" class="btn">See what's possible for you →</a>
+</div>
+</section>
+<section style="padding-top:60px">
+<div class="wrap">
+<div class="results">
+<div class="stat"><div class="n">+218%</div><p>Median non-branded organic traffic growth in year one</p></div>
+<div class="stat"><div class="n">4.2×</div><p>Average return on SEO investment across active clients</p></div>
+<div class="stat"><div class="n">1,900+</div><p>Keywords moved onto page one since 2016</p></div>
+<div class="stat"><div class="n">94%</div><p>Client retention past the first six months</p></div>
+</div>
+<div class="cases">
+<article class="case">
+<div><p class="tag">B2B SaaS · 14 months</p><h3>Northwind</h3><p>Two previous agencies had left a fragmented site with 40% of key pages excluded from the index. We rebuilt the architecture, consolidated 300 thin pages into 60 cluster hubs, and shipped a fix list their engineers deployed over six sprints.</p></div>
+<div class="metrics"><div><b>+312%</b><span>Non-branded sessions</span></div><div><b>3</b><span>Head terms on page one</span></div><div><b>−61%</b><span>Cost per lead</span></div></div>
+</article>
+<article class="case">
+<div><p class="tag">E-commerce · 11 months</p><h3>Merida</h3><p>A 12,000-SKU catalogue with faceted navigation generating millions of crawlable URL combinations. We rewrote the canonical logic, cut crawl waste by three quarters, and rebuilt category pages around buying intent rather than internal taxonomy.</p></div>
+<div class="metrics"><div><b>+184%</b><span>Organic revenue YoY</span></div><div><b>−76%</b><span>Wasted crawl budget</span></div><div><b>2.4×</b><span>Category conversion</span></div></div>
+</article>
+<article class="case">
+<div><p class="tag">Multi-location retail · 9 months</p><h3>Verano</h3><p>38 locations sharing one thin template and competing with each other in local packs. We built a location page system with genuine local content, cleaned up 400+ inconsistent citations, and put review generation into their POS flow.</p></div>
+<div class="metrics"><div><b>+91%</b><span>Local pack impressions</span></div><div><b>+147%</b><span>Direction requests</span></div><div><b>4.7★</b><span>Rating, up from 4.1</span></div></div>
+</article>
+</div>
+</div>
+</section>
+<section style="padding-top:0">
+<div class="wrap"><div class="cta-band">
+<h2>What would yours look like?</h2>
+<p>The free audit includes a 12-month forecast for your own domain, with every assumption laid out so you can argue with it.</p>
+<a href="#/contact" class="btn">Get a free SEO audit →</a> <a href="#/process" class="btn ghost">See how we work</a>
+</div></div>
+</section>
+</div>
+
+<!-- ══ PRICING ══ -->
+<div class="page" id="p-pricing">
+<section class="page-head">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="#/">Home</a><span>/</span>Pricing</nav>
+<h1>Pricing you can read<br>without a call.</h1>
+<p class="lede center">Published rates, scope-based rather than headcount-based, no lock-in past month three — and the roadmap goes with you if you leave.</p>
+<a href="#/contact" class="btn">Get a free SEO audit →</a>
+</div>
+</section>
+<section style="padding-top:52px">
+<div class="wrap">
+<div class="plans">
+<article class="plan">
+<p class="tag">Foundation</p>
+<div class="price">$2,400<span> / month</span></div>
+<p>For smaller sites that need the technical basics right before scaling content.</p>
+<ul>
+<li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 6"/></svg>Full technical audit &amp; fixes</li>
+<li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 6"/></svg>Keyword map, up to 150 terms</li>
+<li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 6"/></svg>2 optimised pages per month</li>
+<li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 6"/></svg>Monthly reporting dashboard</li>
+<li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 6"/></svg>Monthly strategist call</li>
+</ul>
+<a href="#/contact?plan=foundation" class="btn ghost">Start with Foundation</a>
+</article>
+<article class="plan feature">
+<p class="tag">Growth · Most chosen</p>
+<div class="price">$5,800<span> / month</span></div>
+<p>Our core programme: technical, content and links running in parallel every month.</p>
+<ul>
+<li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 6"/></svg>Everything in Foundation</li>
+<li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 6"/></svg>6 content pieces per month</li>
+<li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 6"/></svg>4–6 editorial links per month</li>
+<li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 6"/></svg>Dedicated senior strategist</li>
+<li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 6"/></svg>Fortnightly strategy calls</li>
+<li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 6"/></svg>Conversion testing on top pages</li>
+</ul>
+<a href="#/contact?plan=growth" class="btn">Talk to a strategist</a>
+</article>
+<article class="plan">
+<p class="tag">Enterprise</p>
+<div class="price">Custom</div>
+<p>Multi-market, multi-domain or high-catalogue sites needing embedded support.</p>
+<ul>
+<li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 6"/></svg>Everything in Growth</li>
+<li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 6"/></svg>International &amp; hreflang strategy</li>
+<li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 6"/></svg>Migration planning &amp; QA</li>
+<li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 6"/></svg>Embedded engineer, shared Slack</li>
+<li><svg width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 6"/></svg>Quarterly exec reporting</li>
+</ul>
+<a href="#/contact?plan=enterprise" class="btn ghost">Request a quote</a>
+</article>
+</div>
+<p class="center" style="margin-top:24px;font-size:13.5px">All plans: 3-month minimum, then 30-day rolling · Content and link volumes are minimums, not caps</p>
+</div>
+</section>
+<section style="padding-top:24px">
+<div class="wrap">
+<div class="sec-head center" style="max-width:620px">
+<span class="label">Why Area</span>
+<h2>Fewer retainers, more ownership.</h2>
+<p>How the model compares to the two alternatives most teams weigh it against.</p>
+</div>
+<div class="tbl-wrap">
+<table>
+<caption class="sr">Comparison of Area against in-house teams and typical agencies</caption>
+<thead><tr><th scope="col">Area</th><th scope="col">In-house team</th><th scope="col">Typical agency</th></tr></thead>
+<tbody>
+<tr><td>Senior strategist on every account</td><td>Depends on hiring budget</td><td>Junior account manager</td></tr>
+<tr><td>Engineers ship the fixes</td><td>Competing with product roadmap</td><td>Recommendations handed off</td></tr>
+<tr><td>Forecasts tied to revenue</td><td>Traffic-first reporting</td><td>Ranking screenshots</td></tr>
+<tr><td>Roadmap is yours to keep</td><td>Internal by default</td><td>Locked in the retainer</td></tr>
+<tr><td>30-day rolling after month three</td><td>Fixed headcount cost</td><td>12-month minimum</td></tr>
+<tr><td>Transparent pricing</td><td>—</td><td>Quote on request</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section style="padding-top:0">
+<div class="wrap"><div class="cta-band">
+<h2>Still weighing it up?</h2>
+<p>Start with the free audit. It'll tell you which plan fits — and whether you need us at all.</p>
+<a href="#/contact" class="btn">Get a free SEO audit →</a> <a href="#/faq" class="btn ghost">Read the FAQ</a>
+</div></div>
+</section>
+</div>
+
+<!-- ══ PROCESS ══ -->
+<div class="page" id="p-process">
+<section class="page-head">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="#/">Home</a><span>/</span>Process</nav>
+<h1>Map your search growth.</h1>
+<p class="lede center">Four phases over twelve months. Here's exactly what happens, when it happens, and what lands on your desk at the end of each one.</p>
+<a href="#/contact" class="btn">Start with phase one →</a>
+</div>
+</section>
+<section style="padding-top:60px">
+<div class="wrap">
+<article class="phase">
+<div class="when"><b>01</b>Weeks 1–3</div>
+<div><h3>Audit &amp; forecast</h3><p>Before anything ships, we run a 140-point diagnostic across your technical setup, content and backlink profile, benchmark you against the three competitors actually taking your traffic, and build a revenue forecast so you know the size of the prize before spending a dollar on execution.</p>
+<div class="out"><span>140-point audit document</span><span>Competitor share-of-voice model</span><span>12-month revenue forecast</span><span>Prioritised roadmap</span></div></div>
+</article>
+<article class="phase">
+<div class="when"><b>02</b>Months 1–3</div>
+<div><h3>Fix the foundation</h3><p>Technical remediation first, because it's the fastest ranking movement available and everything else compounds on top of it. Our engineers work in your codebase or CMS where access allows; where your team owns deploys, we supply ticket-ready specs and review each release before it goes out.</p>
+<div class="out"><span>Crawl &amp; indexation fixes</span><span>Core Web Vitals work</span><span>Schema implemented</span><span>Architecture &amp; internal links</span></div></div>
+</article>
+<article class="phase">
+<div class="when"><b>03</b>Months 2–12</div>
+<div><h3>Publish &amp; earn authority</h3><p>Content clusters ship monthly against the keyword map, written by subject specialists and structured to win snippets and AI citations. In parallel, digital PR earns editorial links through original data and expert commentary — the kind of coverage that survives an algorithm update.</p>
+<div class="out"><span>Monthly content calendar</span><span>Pillar pages &amp; clusters</span><span>Data studies</span><span>Journalist outreach</span></div></div>
+</article>
+<article class="phase">
+<div class="when"><b>04</b>Ongoing</div>
+<div><h3>Measure &amp; compound</h3><p>A live dashboard tying rankings to leads and revenue, conversion testing on your highest-traffic landing pages, and a fortnightly call with the strategist doing the work. When the algorithm shifts — and it will — we tell you what changed and what we're doing about it, in writing.</p>
+<div class="out"><span>Live GA4 + GSC dashboard</span><span>Fortnightly strategy calls</span><span>Conversion testing</span><span>Algorithm update briefings</span></div></div>
+</article>
+</div>
+</section>
+<section style="padding-top:0">
+<div class="wrap"><div class="scene">
+<svg viewBox="0 0 1120 380" role="img" aria-label="Aerial view of a winding river through green valleys">
+<defs>
+<linearGradient id="g-v1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7E9550"/><stop offset="1" stop-color="#4E6134"/></linearGradient>
+<linearGradient id="g-v2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#93A85F"/><stop offset="1" stop-color="#61773D"/></linearGradient>
+</defs>
+<rect width="1120" height="380" fill="url(#g-v1)"/>
+<path d="M0 300C180 230 260 320 430 250 600 180 700 275 880 205 1000 158 1070 200 1120 175V380H0Z" fill="url(#g-v2)" opacity=".9"/>
+<path d="M0 120C150 90 230 150 360 130 520 105 600 60 760 78 900 94 1010 60 1120 72V0H0Z" fill="#3F5230" opacity=".85"/>
+<path d="M-20 355C160 300 210 250 360 235 520 219 590 178 700 168 830 156 900 122 1010 108 1070 100 1100 96 1140 92" fill="none" stroke="#DDE3D2" stroke-width="9" stroke-linecap="round"/>
+<path d="M-20 355C160 300 210 250 360 235 520 219 590 178 700 168 830 156 900 122 1010 108 1070 100 1100 96 1140 92" fill="none" stroke="#F4F5EE" stroke-width="3.5" stroke-linecap="round" opacity=".8"/>
+<g fill="#3A4B2B" opacity=".5"><ellipse cx="180" cy="330" rx="60" ry="20"/><ellipse cx="520" cy="300" rx="70" ry="22"/><ellipse cx="900" cy="270" rx="64" ry="20"/></g>
+</svg>
+</div></div>
+</section>
+<section style="padding-top:26px">
+<div class="wrap"><div class="split">
+<div>
+<span class="label">The starting point</span>
+<h2 style="margin-top:14px">Your free SEO audit</h2>
+<p>Most agencies open with a pitch deck. We open with a diagnostic of your site, delivered in three business days — yours to keep whether you hire us or not.</p>
+<ul class="checks">
+<li><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 6"/></svg>Technical health score with prioritised, ticket-ready fixes</li>
+<li><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 6"/></svg>Keyword gaps your three closest competitors already own</li>
+<li><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 6"/></svg>Backlink profile review and toxic link flags</li>
+<li><svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10.5 8 14.5 16 6"/></svg>12-month traffic and revenue forecast, assumptions shown</li>
+</ul>
+<a href="#/contact" class="btn">Claim your audit</a>
+</div>
+<div class="art">
+<svg viewBox="0 0 320 260" role="img" aria-label="Stacked forms representing layered SEO strategy">
+<defs><linearGradient id="g-sh" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#B9AE96" stop-opacity=".45"/></linearGradient></defs>
+<ellipse cx="160" cy="232" rx="128" ry="16" fill="#000" opacity=".07"/>
+<rect x="46" y="132" width="90" height="94" rx="6" fill="#F3EFE4"/><rect x="46" y="132" width="90" height="94" rx="6" fill="url(#g-sh)"/>
+<rect x="132" y="86" width="86" height="140" rx="6" fill="#EFEADC"/><rect x="132" y="86" width="86" height="140" rx="6" fill="url(#g-sh)"/>
+<rect x="212" y="150" width="66" height="76" rx="6" fill="#E7E0CF"/><rect x="212" y="150" width="66" height="76" rx="6" fill="url(#g-sh)"/>
+</svg>
+</div>
+</div></div>
+</section>
+</div>
+
+<!-- ══ FAQ ══ -->
+<div class="page" id="p-faq">
+<section class="page-head">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="#/">Home</a><span>/</span>FAQ</nav>
+<h1>Questions we get asked.</h1>
+<p class="lede center">The honest answers, including the ones that lose us deals. If yours isn't here, ask us directly — we'll answer in writing.</p>
+<a href="#/contact" class="btn">Ask us anything →</a>
+</div>
+</section>
+<section style="padding-top:58px">
+<div class="wrap"><div class="faq">
+
+<div class="faq-group">
+<h2>Timelines &amp; expectations</h2>
+<details class="qa" open><summary>How long does SEO take to show results?<span class="pm">–</span></summary><p class="ans">Technical fixes can move rankings within four to six weeks. Content and authority compound more slowly — most clients see meaningful traffic growth by month three and clear revenue impact by month six. Anyone promising page one in 30 days is selling something else.</p></details>
+<details class="qa"><summary>Do you guarantee first-page rankings?<span class="pm">+</span></summary><p class="ans">No, and nobody can honestly. Rankings depend on competitors, algorithm changes and your site's history — none of which any agency controls. What we guarantee is the work, the reporting and the transparency. The forecast in your audit shows every assumption, so you can judge the likelihood yourself.</p></details>
+<details class="qa"><summary>What happens if Google releases a major update?<span class="pm">+</span></summary><p class="ans">We monitor rankings daily across every client, so we usually spot volatility before the update is confirmed. You get a written briefing within 72 hours explaining what changed, whether it affected you, and what we're adjusting. Roadmap changes triggered by an update are never billed as extra scope.</p></details>
+</div>
+
+<div class="faq-group">
+<h2>Working together</h2>
+<details class="qa"><summary>Do you require a long contract?<span class="pm">+</span></summary><p class="ans">Three months minimum, because that's the honest amount of time the work needs to land. After that it's 30-day rolling. No annual lock-in, and your roadmap, documentation and data all go with you if you leave.</p></details>
+<details class="qa"><summary>Do you implement changes or just advise?<span class="pm">+</span></summary><p class="ans">We implement. Our engineers work directly in your codebase or CMS wherever access allows. If your dev team prefers to own deploys, we hand over ticket-ready specifications and review the release before it ships — no vague "improve site speed" notes left for someone else to interpret.</p></details>
+<details class="qa"><summary>Do you work alongside our existing agency or in-house team?<span class="pm">+</span></summary><p class="ans">Often, yes. We frequently act as the technical and strategic layer alongside an in-house content team, or as the SEO specialists inside a broader paid-media relationship. We'll flag overlaps honestly rather than quietly duplicate spend.</p></details>
+<details class="qa"><summary>What do you need from us to get started?<span class="pm">+</span></summary><p class="ans">Read access to GA4 and Search Console, a staging or CMS login where possible, and one internal owner who can approve content and prioritise dev tickets. That last one matters more than people expect — engagements stall on approval bottlenecks far more often than on strategy.</p></details>
+</div>
+
+<div class="faq-group">
+<h2>Methods &amp; reporting</h2>
+<details class="qa"><summary>How do you build links?<span class="pm">+</span></summary><p class="ans">Digital PR, original data studies, expert commentary and genuine editorial outreach. No private blog networks, no paid link marketplaces, no directory spam — the tactics that get sites penalised are the ones we spend our time cleaning up for new clients.</p></details>
+<details class="qa"><summary>What does reporting actually look like?<span class="pm">+</span></summary><p class="ans">A live dashboard combining GA4, Search Console and rank data, plus a written monthly summary tied to leads and revenue rather than impressions. You also get a fortnightly call with the strategist who does the work, not an account manager relaying it. All data stays exportable and yours.</p></details>
+<details class="qa"><summary>Which industries do you work with?<span class="pm">+</span></summary><p class="ans">Mostly B2B SaaS, e-commerce and multi-location service brands. We decline work in sectors where we'd have to compromise on link ethics or content accuracy, and we won't take a second client competing directly with an existing one in the same market.</p></details>
+</div>
+
+</div></div>
+</section>
+<section style="padding-top:0">
+<div class="wrap"><div class="cta-band">
+<h2>Question not answered?</h2>
+<p>Send it over. We answer in writing before asking you to book anything — and the audit is free either way.</p>
+<a href="#/contact" class="btn">Get a free SEO audit →</a> <a href="#/pricing" class="btn ghost">See pricing</a>
+</div></div>
+</section>
+</div>
+
+<!-- ══ CONTACT ══ -->
+<div class="page" id="p-contact">
+<section class="contact" style="padding-top:60px">
+<div class="wrap">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="#/">Home</a><span>/</span>Contact</nav>
+<h1 style="font-size:clamp(36px,5.8vw,62px);margin-bottom:16px">Let's find your missing traffic</h1>
+<p class="lede center">Tell us where you want to rank. We'll send a personalised SEO audit and forecast within three business days — no cost, no pitch deck, no obligation.</p>
+<form class="form" id="form" novalidate>
+<div class="two">
+<label><span class="sr">Name</span><input type="text" name="name" placeholder="Name" required></label>
+<label><span class="sr">Work email</span><input type="email" name="email" placeholder="Work email" required></label>
+</div>
+<label><span class="sr">Website</span><input type="url" name="site" placeholder="https://yoursite.com" required></label>
+<label><span class="sr">Monthly SEO budget</span>
+<select name="budget">
+<option value="">Monthly SEO budget</option>
+<option>Under $2,500</option>
+<option>$2,500 – $6,000</option>
+<option>$6,000 – $15,000</option>
+<option>$15,000+</option>
+</select>
+</label>
+<label><span class="sr">Goals</span><textarea name="message" placeholder="What are you trying to achieve with search? Any keywords or competitors we should look at?" required></textarea></label>
+<button class="btn" type="submit">Get my free SEO audit</button>
+<p style="font-size:12.5px;text-align:center">We reply within one business day. Your details stay private and we never resell data.</p>
+<div id="sent">✓ Thanks — your audit request is in. Expect your report within three business days.</div>
+</form>
+<p style="margin-top:40px;font-size:14px">Prefer email? <a href="mailto:hello@area.studio" style="color:var(--olive);font-weight:500">hello@area.studio</a></p>
+</div>
+</section>
+</div>
+
+</main>
+
+<footer class="site-foot">
+<div class="wrap">
+<div class="foot-grid">
+<div>
+<a href="#/" class="brand"><i></i>Area</a>
+<p style="font-size:13.5px;margin-top:10px;max-width:250px">SEO agency for brands that want organic search to carry real revenue.</p>
+</div>
+<div class="foot-links">
+<a href="#/services">SEO Services</a><a href="#/results">Results</a><a href="#/pricing">Pricing</a><a href="#/process">Process</a><a href="#/faq">FAQ</a><a href="#/contact">Free audit</a>
+</div>
+</div>
+<div class="foot-bot">
+<span>© 2026 Area SEO Studio. All rights reserved.</span>
+<span>hello@area.studio · Portland, OR</span>
+</div>
+</div>
+</footer>
+
+<script>
+/* ── router ── */
+var ROUTES = {
+  home:     'Area — SEO Agency for Technical SEO, Content & Link Building',
+  services: 'SEO Services — Technical, Content, Links & Analytics | Area',
+  results:  'SEO Results & Case Studies | Area',
+  pricing:  'SEO Pricing — Transparent Monthly Plans | Area',
+  process:  'Our SEO Process — Audit, Fix, Publish, Compound | Area',
+  faq:      'SEO FAQ — Timelines, Contracts, Link Ethics | Area',
+  contact:  'Get a Free SEO Audit | Area'
+};
+
+function render(){
+  var raw  = location.hash.replace(/^#\/?/, '');
+  var name = raw.split('?')[0] || 'home';
+  if(!ROUTES[name]) name = 'home';
+
+  document.querySelectorAll('.page').forEach(function(p){
+    p.classList.toggle('on', p.id === 'p' + '-' + name);
+  });
+  document.querySelectorAll('[data-nav]').forEach(function(a){
+    a.classList.toggle('on', a.dataset.nav === name);
+    if(a.dataset.nav === name){ a.setAttribute('aria-current','page'); }
+    else { a.removeAttribute('aria-current'); }
+  });
+  document.title = ROUTES[name];
+  window.scrollTo(0, 0);
+  bindFaq();
+  if(name === 'contact') prefill(raw);
+}
+
+/* ── plan prefill from #/contact?plan=growth ── */
+function prefill(raw){
+  var q = raw.split('?')[1] || '';
+  var m = q.match(/plan=([a-z]+)/i);
+  var box = document.querySelector('textarea[name="message"]');
+  if(m && box && !box.value){
+    var p = m[1];
+    box.value = "I'm interested in the " + p.charAt(0).toUpperCase() + p.slice(1) + " plan. ";
+  }
+}
+
+/* ── FAQ accordion ── */
+function bindFaq(){
+  var qas = document.querySelectorAll('#p-faq .qa');
+  qas.forEach(function(d){
+    if(d.dataset.bound) return;
+    d.dataset.bound = '1';
+    d.addEventListener('toggle', function(){
+      if(d.open) qas.forEach(function(o){ if(o !== d) o.open = false; });
+      qas.forEach(function(o){ o.querySelector('.pm').textContent = o.open ? '–' : '+'; });
+    });
+  });
+}
+
+addEventListener('hashchange', render);
+render();
+
+/* ── header + menu ── */
+var head = document.getElementById('head');
+addEventListener('scroll', function(){ head.classList.toggle('stuck', scrollY > 8); });
+
+var menu = document.getElementById('menu'), burger = document.getElementById('burger');
+burger.onclick = function(){ burger.setAttribute('aria-expanded', menu.classList.toggle('open')); };
+menu.querySelectorAll('a').forEach(function(a){ a.onclick = function(){ menu.classList.remove('open'); }; });
+
+/* ── form ── */
+var form = document.getElementById('form');
+form.onsubmit = function(e){
+  e.preventDefault();
+  if(!form.checkValidity()) return form.reportValidity();
+  Array.prototype.forEach.call(form.children, function(el){
+    if(el.id !== 'sent') el.style.display = 'none';
+  });
+  document.getElementById('sent').style.display = 'block';
+};
+</script>
+</body>
+</html>

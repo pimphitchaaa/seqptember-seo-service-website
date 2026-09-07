@@ -1,0 +1,33 @@
+// sticky header border
+const head = document.getElementById('head');
+if (head) addEventListener('scroll', () => head.classList.toggle('stuck', scrollY > 8));
+
+// mobile menu
+const menu = document.getElementById('menu'), burger = document.getElementById('burger');
+if (burger && menu) {
+  burger.onclick = () => burger.setAttribute('aria-expanded', menu.classList.toggle('open'));
+  menu.querySelectorAll('a').forEach(a => a.onclick = () => menu.classList.remove('open'));
+}
+
+// FAQ accordion (one open at a time)
+const qas = document.querySelectorAll('.qa');
+qas.forEach(d => d.addEventListener('toggle', () => {
+  if (d.open) qas.forEach(o => { if (o !== d) o.open = false; });
+  qas.forEach(o => o.querySelector('.pm').textContent = o.open ? '–' : '+');
+}));
+
+// contact form
+const form = document.getElementById('form');
+if (form) form.onsubmit = e => {
+  e.preventDefault();
+  if (!form.checkValidity()) return form.reportValidity();
+  form.querySelectorAll('label,button,p').forEach(el => el.style.display = 'none');
+  document.getElementById('sent').style.display = 'block';
+};
+
+// prefill plan from ?plan=growth
+const plan = new URLSearchParams(location.search).get('plan');
+if (plan) {
+  const msg = document.querySelector('textarea[name="message"]');
+  if (msg && !msg.value) msg.value = `I'm interested in the ${plan[0].toUpperCase() + plan.slice(1)} plan. `;
+}
